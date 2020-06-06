@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoleta Pantaneira/Criando um novo ponto</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&Ubuntu:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Importando styles CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/create-point.css">
+    <link rel="stylesheet" href="/styles/responsive.css">    
+
+</head>
+<body>
+
+    <div id="page-create-point">
+        <header>
+                <img src="/extras-aula-1/icones/logo.svg" alt="Logo">                    
+    
+                <a href="index.html">
+                    <span></span>
+                    Voltar para a home
+                </a>
+    
+        </header>
+
+        <form action="">
+
+            <h1>Cadastro do ponto de coleta</h1>
+
+            <fieldset>
+
+                <legend>
+                    <h2>Dados da entidade</h2>
+                </legend>
+
+                <div class="field">
+                    <label for="">Nome da entidade</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="adress">Endereço</label>
+                        <input type="text" name="adress" required>
+                    </div>
+                    <div class="field">
+                        <label for="adress2">Número/Complemento</label>
+                        <input type="text" name="adress2" required>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="state">Estado</label>
+                        <select name="uf" required>
+                            <option value="">Selecione o Estado</option>                            
+                        </select>
+                        <input type="hidden" name="state">
+                    </div>
+
+                    <div class="field">
+                        <label for="city">Cidade</label>
+                        <select name="city" disabled required>
+                            <option value="">Selecione a Cidade</option>
+                        </select>
+                    </div>
+                </div>
+
+
+            </fieldset>
+                <legend>
+                    <h2>Itens de coleta</h2>
+                </legend>
+
+                <div class="items-grid">
+                    <input type="hidden" name="items" value>
+                    <li data-id="1">
+                        <img src="/extras-aula-1/icones/lampadas.svg" alt="Lâmpadas">
+                        <span>Lâmpadas</span>
+                    </li>
+                    <li data-id="2">
+                        <img src="/extras-aula-1/icones/baterias.svg" alt="Baterias">
+                        <span>Baterias</span>
+                    </li>
+                    <li data-id="3">
+                        <img src="/extras-aula-1/icones/eletronicos.svg" alt="Eletrônicos">
+                        <span>Eletrônicos</span>
+                    </li>
+                    <li data-id="4">
+                        <img src="/extras-aula-1/icones/oleo.svg" alt="Óleo">
+                        <span>Óleo</span>
+                    </li>
+                    <li data-id="5">
+                        <img src="/extras-aula-1/icones/organicos.svg" alt="Orgânicos">
+                        <span>Orgânicos</span>
+                    </li>
+                    <li data-id="6">
+                        <img src="/extras-aula-1/icones/papeis-papelao.svg" alt="Papéis de Papelão">
+                        <span>Papéis de Papelão</span>
+                    </li>
+                </div>
+            <fieldset>
+
+            </fieldset>
+
+            <button type="submit">Cadastrar ponto de coleta</button>
+        </form> 
+
+    </div>
+    
+    <script src="/scripts/create-point.js"></script>
+    
+    
+</body>
+</html>
