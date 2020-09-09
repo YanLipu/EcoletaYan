@@ -75,3 +75,16 @@
 #modal form button:hover {
     background-color: #2FB85E;
 }
+
+/* Configurações do modal na página pós cadastro */
+
+#modal.point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#modal.point h1 {
+    color: white;
+    margin-top: 32px;
+}
